@@ -1,8 +1,6 @@
 import { useSelector } from 'react-redux'
-
 import Tarefa from '../../components/Tarefa'
 import { Container } from './styles'
-
 import { RootReducer } from '../../store'
 
 const ListaDeTarefas = () => {
@@ -10,9 +8,7 @@ const ListaDeTarefas = () => {
 
   return (
     <Container>
-      <p>
-        2 tarefas marcadas como: &quot;categoria&ldquo; e &quot;termo&ldquo;
-      </p>
+      <p>2 tarefas marcadas como: &quot;categoria&quot; e &quot;termo&quot;</p>
       <ul>
         {itens.map((t) => (
           <li key={t.titulo}>
